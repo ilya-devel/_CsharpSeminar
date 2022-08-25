@@ -1,7 +1,7 @@
 ﻿int rndNum = new Random().Next(10, 100);
 System.Console.WriteLine($"Number: {rndNum}");
 
-MaxGenerateNum();
+MaxGenerateNum(rndNum);
 
 void MaxGenerateNum(int rndN)
 {
