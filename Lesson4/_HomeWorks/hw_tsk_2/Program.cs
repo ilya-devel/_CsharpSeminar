@@ -4,7 +4,7 @@ using System;
 
 namespace HomeWork
 {
-    class Task
+    class TaskTwo
     {
         static void Main()
         {
