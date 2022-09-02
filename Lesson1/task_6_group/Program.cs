@@ -7,7 +7,7 @@ namespace taskSix
         static void Main()
         {
             Console.WriteLine("Введите целое 3-х значное число: ");
-            string num = Console.ReadLine();
+            string num = Convert.ToString(Console.ReadLine());
             Console.WriteLine("Последнее цифра в числе: " + num[num.Length-1]);
             int num2 = Convert.ToInt32(num);
             Console.WriteLine("Другой способ определения 3 числа: " + (num2 % 10));
