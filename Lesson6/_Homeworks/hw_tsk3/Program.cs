@@ -22,7 +22,7 @@ namespace hw_tsk3
             double[] side = new double[3];
             for (int i = 0; i<side.Length; i++)
             {
-                System.Console.WriteLine($"Введите {i} сторону треугольника: ");
+                System.Console.WriteLine($"Введите {i+1} сторону треугольника: ");
                 bool check = Double.TryParse(Console.ReadLine(), out double length);
                 if (!check)
                 {

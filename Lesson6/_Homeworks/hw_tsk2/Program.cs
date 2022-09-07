@@ -37,7 +37,8 @@ namespace hw_tsk2
         {
             double X = (-1 * (p1[1] - p2[1]) / (p1[0] - p2[0]));
             double Y = p2[0] * X + p2[1];
-            System.Console.WriteLine($"{X} : {Y}");
+            if (Double.IsNaN(X) || Double.IsNaN(Y)) System.Console.WriteLine("Полученные данные не верны, попробуйте ещё раз");
+            else System.Console.WriteLine($"Точка пересечения двух прямых равна {X} : {Y}");
         }
     }
 }

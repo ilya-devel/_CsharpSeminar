@@ -26,7 +26,7 @@ namespace hw_tsk4
         {
             int maxValue = (matrix.GetLength(0) * matrix.GetLength(1));
             for(int i=0; i < matrix.GetLength(0); i++) 
-            for (int j=0; j < matrix.GetLength(1); j++) matrix[i,j] = new Random().Next(1, maxValue);
+            for (int j=0; j < matrix.GetLength(1); j++) matrix[i,j] = new Random().Next(1, maxValue*5);
             return matrix;
         }
         static int[] GetRowAndColForTable()
@@ -50,7 +50,7 @@ namespace hw_tsk4
         {
             for(int i=0; i < matr.GetLength(0); i++)
                 {
-                    for (int j=0; j < matr.GetLength(1); j++) System.Console.Write($"{matr[i,j]:d2} ");
+                    for (int j=0; j < matr.GetLength(1); j++) System.Console.Write($"{matr[i,j]:d3} ");
                     System.Console.WriteLine();
                 }
         }
@@ -78,6 +78,7 @@ namespace hw_tsk4
                         listValues.RemoveAt(index);
                         break;
                     }
+                    count++;
                 } while (count != (matrix.GetLength(0) * matrix.GetLength(1)));
                 if (count == (matrix.GetLength(0) * matrix.GetLength(1))) return GetMixValuesIn2DMatrix(matrix);
             }

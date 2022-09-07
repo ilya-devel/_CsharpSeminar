@@ -68,9 +68,9 @@ namespace hw_tsk3
         public void ShowValuesCorners()
         {
             // System.Console.WriteLine($"Угол alpha (AB-CA)треугольника равен: {Math.Acos((Q(this.AB) + Q(this.CA) - Q(this.BC)) / (2 * this.AB * this.CA)) * 180 / Math.PI}");
-            System.Console.WriteLine($"Угол Alpha (AB-CA)треугольника равен: {this.Alpha()}");
-            System.Console.WriteLine($"Угол Beta (AB-BC)треугольника равен: {this.Beta()}");
-            System.Console.WriteLine($"Угол Gamma (BC-CA)треугольника равен: {this.Gamma()}");
+            System.Console.WriteLine($"Угол Alpha (AB-CA)треугольника равен: {this.Alpha():f3}");
+            System.Console.WriteLine($"Угол Beta (AB-BC)треугольника равен: {this.Beta():f3}");
+            System.Console.WriteLine($"Угол Gamma (BC-CA)треугольника равен: {this.Gamma():f3}");
         }
         public string WhatIsItType()
         {
